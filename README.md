@@ -5,34 +5,35 @@ This section contains various Data Structures and Algorithms (DSA) patterns. Eac
 ## 1. Sliding Window
 
 ### Description
-The Sliding Window pattern is used to solve problems that involve arrays or lists of data where you need to find a subarray or a contiguous sequence. The window size can be fixed or variable, and you slide the window over the array to find the desired result.
+The Sliding Window pattern is used to perform a required operation on a specific window size of a given array or linked list, such as finding the longest subarray containing all 1s. Sliding Windows start from the 1st element and keep shifting right by one element and adjust the length of the window according to the problem that you are solving. In some cases, the window size remains constant and in other cases the sizes grows or shrinks.
 
 ### Tips to Identify the Pattern
 - You are asked to find or calculate something within a contiguous subarray or sequence.
-- The problem involves arrays or lists.
+- The problem input is a linear data structure such as a linked list, array, or string.
 - The problem might involve maximizing, minimizing, or finding a specific condition within a subarray.
 
+
 ### Example Problems
-- **LeetCode 3: Longest Substring Without Repeating Characters**
-- **LeetCode 567: Permutation in String**
-- **LeetCode 209: Minimum Size Subarray Sum**
+- **Longest Substring Without Repeating Characters**
+- **Longest substring with ‘K’ distinct characters**
+- **Maximum sum subarray of size ‘K’ **
 
 ---
 
 ## 2. Two Pointers
 
 ### Description
-The Two Pointers pattern is used to solve problems where you need to process elements in an array or a list from both ends towards the middle, or from one end using two pointers. This pattern is useful in situations where the input data is sorted or when you need to compare elements in a pair.
+Two Pointers is a pattern where two pointers iterate through the data structure in tandem until one or both of the pointers hit a certain condition. This pattern is useful in situations where the input data is sorted or when you need to compare elements in a pair.
 
 ### Tips to Identify the Pattern
-- You are asked to find pairs in a sorted array.
-- The problem involves comparing elements in pairs.
-- You need to move inward/outward from the edges of an array or list.
+- Yt will feature problems where you deal with sorted arrays (or Linked Lists) and need to find a set of elements that fulfill certain constraints.
+- The set of elements in the array is a pair, a triplet, or even a subarray
+- The problem involves comparing elements in pairs.You need to move inward/outward from the edges of an array or list.
 
 ### Example Problems
-- **LeetCode 1: Two Sum**
-- **LeetCode 15: 3Sum**
-- **LeetCode 167: Two Sum II - Input Array Is Sorted**
+- **Two Sum**
+- **3Sum**
+- **Triplets that sum to zero**
 
 ---
 
@@ -42,14 +43,14 @@ The Two Pointers pattern is used to solve problems where you need to process ele
 The Fast and Slow Pointers pattern, also known as the Tortoise and Hare method, is used to detect cycles in linked lists or arrays. One pointer moves faster than the other, and if a cycle exists, they will eventually meet.
 
 ### Tips to Identify the Pattern
-- You are asked to detect a cycle in a linked list or an array.
+- You are asked to detect a cycle/loop in a linked list or an array.
 - The problem involves finding the middle element of a linked list.
 - The problem involves determining whether a linked list is a palindrome.
 
 ### Example Problems
-- **LeetCode 141: Linked List Cycle**
-- **LeetCode 142: Linked List Cycle II**
-- **LeetCode 234: Palindrome Linked List**
+- **Linked List Cycle**
+- **Palindrome Linked List**
+- **Cycle in a Circular Array**
 
 ---
 
@@ -64,9 +65,9 @@ The Merge Intervals pattern is used when you are given a list of intervals, and 
 - The intervals need to be processed or combined in some way.
 
 ### Example Problems
-- **LeetCode 56: Merge Intervals**
-- **LeetCode 57: Insert Interval**
-- **LeetCode 252: Meeting Rooms**
+- ** Merge Intervals**
+- **Insert Interval**
+- **Meeting Rooms**
 
 ---
 
@@ -81,9 +82,9 @@ The Cyclic Sort pattern is used to solve problems involving a list of numbers ra
 - The problem can be solved using cyclic swaps to place elements in their correct positions.
 
 ### Example Problems
-- **LeetCode 268: Missing Number**
-- **LeetCode 442: Find All Duplicates in an Array**
-- **LeetCode 448: Find All Numbers Disappeared in an Array**
+- **Missing Number**
+- **Find All Duplicates in an Array**
+- **Find All Numbers Disappeared in an Array**
 
 ---
 
@@ -98,16 +99,15 @@ The In-Place Reversal of Linked List pattern is used to reverse a linked list, o
 - The problem can be solved by reversing pointers in the linked list.
 
 ### Example Problems
-- **LeetCode 206: Reverse Linked List**
-- **LeetCode 92: Reverse Linked List II**
-- **LeetCode 25: Reverse Nodes in k-Group**
+- ** Reverse Linked List**
+- **Reverse Nodes in k-Group**
 
 ---
 
 ## 7. Tree BFS (Breadth-First Search)
 
 ### Description
-The Tree BFS pattern is used to traverse a tree level by level, starting from the root. This pattern is useful in problems where you need to explore nodes in a tree in a breadth-first manner.
+This pattern is based on the Breadth First Search (BFS) technique to traverse a tree and uses a queue to keep track of all the nodes of a level before jumping onto the next level. Any problem involving the traversal of a tree in a level-by-level order can be efficiently solved using this approach.
 
 ### Tips to Identify the Pattern
 - You are asked to traverse a tree or graph level by level.
@@ -115,9 +115,8 @@ The Tree BFS pattern is used to traverse a tree level by level, starting from th
 - The problem can be solved using a queue to explore nodes level by level.
 
 ### Example Problems
-- **LeetCode 102: Binary Tree Level Order Traversal**
-- **LeetCode 107: Binary Tree Level Order Traversal II**
-- **LeetCode 103: Binary Tree Zigzag Level Order Traversal**
+- ** Binary Tree Level Order Traversal**
+- ** Binary Tree Zigzag Level Order Traversal**
 
 ---
 
@@ -130,11 +129,12 @@ The Tree DFS pattern is used to traverse a tree or graph by exploring as far as 
 - You are asked to explore all paths in a tree or graph.
 - The problem involves finding all combinations or permutations.
 - The problem can be solved using recursion or a stack to explore all branches.
+- If you’re asked to traverse a tree with in-order, preorder, or postorder DFS.
 
 ### Example Problems
-- **LeetCode 104: Maximum Depth of Binary Tree**
-- **LeetCode 112: Path Sum**
-- **LeetCode 113: Path Sum II**
+- **Maximum Depth of Binary Tree**
+- **Path Sum**
+- **Sum of Path Numbers**
 
 ---
 
@@ -149,9 +149,9 @@ The Backtracking pattern is used to solve problems where you need to explore all
 - The problem can be solved by trying all possibilities and backtracking.
 
 ### Example Problems
-- **LeetCode 46: Permutations**
-- **LeetCode 78: Subsets**
-- **LeetCode 39: Combination Sum**
+- **Permutations**
+- **Subsets**
+- **Combination Sum**
 
 ---
 
@@ -166,9 +166,9 @@ The Dynamic Programming (DP) pattern is used to solve problems where the solutio
 - The problem can be solved using a table to store subproblem results.
 
 ### Example Problems
-- **LeetCode 53: Maximum Subarray**
-- **LeetCode 70: Climbing Stairs**
-- **LeetCode 322: Coin Change**
+- **Maximum Subarray**
+- **Climbing Stairs**
+- **Coin Change**
 
 ---
 
@@ -183,9 +183,9 @@ Topological Sort is used to find a linear ordering of vertices in a directed acy
 - The problem requires determining an order of execution.
 
 ### Example Problems
-- **LeetCode 207: Course Schedule**
-- **LeetCode 210: Course Schedule II**
-- **LeetCode 269: Alien Dictionary**
+- **Course Schedule**
+- **Course Schedule II**
+- **Alien Dictionary**
 
 ---
 
@@ -200,13 +200,13 @@ The Union Find (or Disjoint Set) pattern is used to solve problems related to gr
 - You need to determine if elements are in the same group or detect cycles in a graph.
 
 ### Example Problems
-- **LeetCode 323: Number of Connected Components in an Undirected Graph**
-- **LeetCode 684: Redundant Connection**
-- **LeetCode 547: Number of Provinces**
+- **Number of Connected Components in an Undirected Graph**
+- **Redundant Connection**
+- **Number of Provinces**
 
 ---
 
-## 13. Binary Search
+## 13. Binary Search/ Modified Binary Search
 
 ### Description
 The Binary Search pattern is used to efficiently find an element or determine if an element exists in a sorted array. The pattern repeatedly divides the search space in half, reducing the time complexity to O(log n).
@@ -217,6 +217,114 @@ The Binary Search pattern is used to efficiently find an element or determine if
 - The problem can be solved by repeatedly dividing the search space in half.
 
 ### Example Problems
-- **LeetCode 704: Binary Search**
-- **LeetCode 33: Search in Rotated Sorted Array**
-- **LeetCode 74: Search a
+- **Binary Search**
+- **Search in Rotated Sorted Array**
+- **Search a Search a 2D Matrix**
+
+---
+
+## 14. Greedy
+
+### Description
+The Greedy pattern is used to solve optimization problems where the locally optimal choice leads to a globally optimal solution. This pattern is useful in problems involving finding the maximum or minimum value.
+
+### Tips to Identify the Pattern
+- The problem involves making choices to maximize or minimize a value.
+- The input can be processed in a sequential manner.
+- The problem can be solved by making the best choice at each step.
+
+### Example Problems
+- **Jump Game**
+- **Jump Game II**
+- **Non-overlapping Intervals**
+
+---
+
+## 15. Bit Manipulation
+
+### Description
+The Bit Manipulation pattern involves solving problems by directly manipulating the bits of numbers. This pattern is efficient for problems related to binary representations, XOR operations, or finding unique elements in a list.
+
+### Tips to Identify the Pattern
+- The problem involves binary numbers or operations.
+- You need to optimize the solution by using bitwise operations.
+- The problem can be solved by manipulating bits directly.
+
+### Example Problems
+- **Single Number**
+- **Counting Bits**
+- **Number of 1 Bits**
+
+---
+## 16. Top K Elements
+
+### Description
+The Top K Elements pattern is used to find the top K largest or smallest elements in a collection, such as an array or a list. This pattern is commonly solved using a heap (priority queue) or by sorting the array.
+
+### Tips to Identify the Pattern
+- You are asked to find the K largest or smallest elements in an array.
+- The problem involves ranking or ordering elements based on their values.
+- The problem can be solved by maintaining a heap of size K or sorting the array.
+
+### Example Problems
+- **Top K Frequent Elements**
+- **Kth Largest Element in an Array**
+- **K Closest Points to Origin**
+
+---
+
+## 17. K-Way Merging
+
+### Description
+The K-Way Merging pattern is used to merge multiple sorted arrays or lists into one sorted array. This pattern is often used in problems that involve combining or merging multiple data streams or lists.
+
+### Tips to Identify the Pattern
+- You are given multiple sorted arrays or lists and asked to merge them into one sorted list.
+- The problem involves combining sorted sequences.
+- The problem can be solved by maintaining a min-heap to keep track of the smallest elements from each array.
+
+### Example Problems
+- **Merge k Sorted Lists**
+- **Find K Pairs with Smallest Sums**
+- **Kth Smallest Element in a Sorted Matrix**
+
+---
+
+## 18. Two Heaps
+
+### Description
+The Two Heaps pattern is used to solve problems where you need to find the median or any other specific percentile in a data stream. It involves using two heaps: a max-heap to store the smaller half of the elements and a min-heap to store the larger half.
+
+### Tips to Identify the Pattern
+- The problem involves finding the median or another percentile in a stream of numbers.
+- The problem requires dynamically adjusting to new data while maintaining a balance between two halves.
+- The problem can be solved by using two heaps to store the lower and upper halves of the data.
+
+### Example Problems
+- **Find Median from Data Stream**
+- **Sliding Window Median**
+- **Sliding Window Maximum** (can be adapted)
+
+---
+
+## 19. Prefix and Postfix Computations
+
+### Description
+The Prefix and Postfix Computations pattern involves calculating prefix (cumulative) and postfix (suffix) values for an array. This pattern is often used in problems where you need to compute results for each element based on all other elements in the array without directly iterating over all other elements for each computation.
+
+### Tips to Identify the Pattern
+- The problem involves operations where each element's result depends on all other elements in the array.
+- You are asked to calculate cumulative products, sums, or other values while excluding the current element.
+- The problem can be solved by precomputing prefix and postfix arrays to avoid redundant calculations.
+
+### Example Problems
+- **Product of Array Except Self**
+- **Subarray Sum Equals K**
+- **Count Number of Nice Subarrays**
+
+---
+
+
+
+
+
