@@ -16,7 +16,9 @@ The Sliding Window pattern is used to perform a required operation on a specific
 ### Example Problems
 - **Longest Substring Without Repeating Characters**
 - **Longest substring with ‘K’ distinct characters**
-- **Maximum sum subarray of size ‘K’ **
+- **Maximum sum subarray of size ‘K’**
+
+
 
 ---
 
@@ -26,7 +28,7 @@ The Sliding Window pattern is used to perform a required operation on a specific
 Two Pointers is a pattern where two pointers iterate through the data structure in tandem until one or both of the pointers hit a certain condition. This pattern is useful in situations where the input data is sorted or when you need to compare elements in a pair.
 
 ### Tips to Identify the Pattern
-- Yt will feature problems where you deal with sorted arrays (or Linked Lists) and need to find a set of elements that fulfill certain constraints.
+- It will feature problems where you deal with sorted arrays (or Linked Lists) and need to find a set of elements that fulfill certain constraints.
 - The set of elements in the array is a pair, a triplet, or even a subarray
 - The problem involves comparing elements in pairs.You need to move inward/outward from the edges of an array or list.
 
@@ -65,7 +67,7 @@ The Merge Intervals pattern is used when you are given a list of intervals, and 
 - The intervals need to be processed or combined in some way.
 
 ### Example Problems
-- ** Merge Intervals**
+- **Merge Intervals**
 - **Insert Interval**
 - **Meeting Rooms**
 
@@ -99,7 +101,7 @@ The In-Place Reversal of Linked List pattern is used to reverse a linked list, o
 - The problem can be solved by reversing pointers in the linked list.
 
 ### Example Problems
-- ** Reverse Linked List**
+- **Reverse Linked List**
 - **Reverse Nodes in k-Group**
 
 ---
